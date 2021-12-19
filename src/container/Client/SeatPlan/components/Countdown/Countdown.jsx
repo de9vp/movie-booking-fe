@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getModalVisibleCountdown, timesUp } from '../../module/seatSlice';
 import styles from './Countdown.module.css';
+import { SyncOutlined } from '@ant-design/icons';
 
 function Countdown() {
     const dispatch = useDispatch();
@@ -21,7 +22,7 @@ function Countdown() {
 
     return (
         <>
-            <span>{num}</span>
+            <span style={{ 'width': '90px' }} className={styles.Time}><SyncOutlined spin style={{ 'margin-right': '10px' }} />{num}s</span>
             <Modal
                 title=""
                 closable={false}

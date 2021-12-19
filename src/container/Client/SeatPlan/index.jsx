@@ -10,6 +10,7 @@ import Seat from './components/Seat/Seat';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAll, getSeatPlanAsync, updateAccessToken, updateBookingData } from './module/seatSlice';
 import Countdown from './components/Countdown/Countdown';
+import { RollbackOutlined, CalendarOutlined, ClockCircleOutlined } from '@ant-design/icons';
 
 function Index() {
     const navigate = useNavigate();
@@ -65,11 +66,14 @@ function Index() {
                         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                             <Col className="gutter-row" span={8}>
                                 <Button type="primary" shape="round" size="large" onClick={handleBack}>
-                                    Back
+                                    <RollbackOutlined />Back
                                 </Button>
                             </Col>
-                            <Col style={{ 'display': 'flex', 'justify-content': 'center', 'align-items': 'center' }} className="gutter-row space-align-block" span={8}>
-                                <div>{data.thongTinPhim.ngayChieu} - {data.thongTinPhim.gioChieu}</div>
+                            <Col style={{ 'display': 'flex', 'justify-content': 'center' }} className="gutter-row space-align-block" span={8}>
+
+                                <span style={{ 'margin-right': '10px' }} className={styles.Time}><CalendarOutlined style={{ 'margin-right': '10px' }} />{data.thongTinPhim.ngayChieu}</span>
+                                <span className={styles.Time}><ClockCircleOutlined style={{ 'margin-right': '10px' }} />{data.thongTinPhim.gioChieu}</span>
+
                             </Col>
                             <Col style={{ 'display': 'flex', 'flex-direction': 'row-reverse' }} className="gutter-row" span={8}>
                                 <Countdown />
