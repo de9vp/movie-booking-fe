@@ -1,0 +1,94 @@
+#contact {
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer-section {
+    background: url(https://boleto.vercel.app/static/media/footer-shape.47c7d6d7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .footer-section .footer-top {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .footer-section .footer-top .social-icons {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+
+.footer-section .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.footer-top {
+  margin-top: 90px;
+  display: flex;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons > li {
+  font-size: 2rem;
+  color: antiquewhite;
+  padding: 0 10px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.footer-section {
+  padding: 0.5rem 12rem;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.left {
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.links > ul {
+  list-style: none;
+  display: flex;
+}
+
+.contact-link > li {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: azure;
+}
+.contact-link > li:hover {
+  text-decoration: underline;
+}

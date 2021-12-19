@@ -1,0 +1,1 @@
+export const API_URL = "https://movie0706.cybersoft.edu.vn/api"

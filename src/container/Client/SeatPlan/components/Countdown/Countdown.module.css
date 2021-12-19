@@ -1,0 +1,14 @@
+.ModalText,
+.ModalTitle {
+    text-align: center;
+}
+
+.ModalTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.ModalText span {
+    cursor: pointer;
+    color: red;
+}

@@ -1,0 +1,123 @@
+.SelectArea {
+    text-align: center;
+}
+
+.SelectTitle {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.SelectTitle::before {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    background: #213a69;
+    margin: 10px auto;
+}
+
+.SelectTitle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #213a69;
+    margin: 10px auto;
+}
+
+.ScreenImg {
+    padding: 30px 0;
+}
+
+.ScreenImg img {
+    width: 70%;
+}
+
+.SingleSeat {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    color: rgb(199, 208, 255);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* .SingleSeat:hover {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+ */
+
+.SingleSeat span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SingleSeat img {
+    height: 35px;
+}
+
+.SelectArea {
+    margin-bottom: 100px;
+}
+
+.SummeryTitle {
+    color: #fff;
+    background-color: #032055;
+    border: 1px solid #11326f;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.BookingSummery {
+    color: #fff;
+    background-color: #032055;
+    border: 1px solid #11326f;
+    padding: 25px;
+}
+
+h2 {
+    word-break: break-all;
+    color: white;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+p {
+    color: #91b3f1;
+}
+
+.Amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #11326f;
+    border-top: 1px dashed #11326f;
+}
+
+.ModalBtn,
+.ModalText,
+.ModalTitle {
+    text-align: center;
+}
+
+.ModalTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
